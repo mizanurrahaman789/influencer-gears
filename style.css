@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+      background-color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      
+}
+
+
+/* ---------header style area start---------- */
+
+
+.container{
+      width: 80%;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 20px;
+         
+}
+/*------------- Influencers---------- */
+
+.Influencers{
+       display: flex;
+      justify-content: center;
+      align-items: center;  
+}
+.Influencer-text{
+      width: 60%;
+}
+.Influencer-img{
+      width: 40%;
+}
+.Influencer-text h1{
+      font-size: 50px;
+}
+.text-area {
+      width: 200px;
+      text-decoration: none;
+      background-color: salmon;
+      padding: 10px 40px;
+}
+
+.Influencer-img img{
+      width: 100%;
+      border-radius: 10px;
+      
+      
+}
+
+/* ---------header style area start---------- */
+
+
+.company-name{
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      flex-direction: column;
+      
+}
+
+/*---------- middle section area start-------------- */
+.middle-info{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      flex-direction: column;
+      margin-left: 10px;
+}
+
+.fa-star.filde{
+      color: #fb901e;
+}
+.fa-star-half-alt.filde{
+      color: #fb901e;
+}
+/*---------- middle section area end-------------- */
