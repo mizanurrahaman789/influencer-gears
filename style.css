@@ -82,11 +82,14 @@ ul li a{
 }
 .text-area {
       text-decoration: none;
-      background-color: salmon;
+      background-color: #e44880;
       padding: 10px 40px;
+      color: azure;
+      border-radius: 10px;
 }
 .text-area a{
       text-decoration: none;
+      
 }
 
 .Influencer-img img{
@@ -107,6 +110,10 @@ ul li a{
       flex-direction: column;
       
       
+}
+
+.company-logo{
+      margin-top: 50px;
 }
 
 /*---------- middle section area start-------------- */
