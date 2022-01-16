@@ -6,69 +6,7 @@ body{
       
 }
 
- /* header{
-      background-color: blanchedalmond;
-}
-.container{
-      
-      display: flex;
-      justify-content: center;
-      align-items: center; 
-      width: 80%;
-}
-.menu{
-
-      display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-around;
-
-}
-.logo{
-      font-size: 20px;
-      margin-right: 50px;
-}
-.nav-bar{
-      display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-around;
-      
-}
-.navigation{
-margin-right: 10px;
-}
-.nav-bar ul{
-       display: flex; 
-       
-}
-.nav-bar ul li{
-      list-style: none;
-      align-items: center;
-      text-align: right;
-      padding-right: 35px;
-      
-}
-.nav-bar ul li a{
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
-      font-weight: bold;
-}
-.social-media{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      flex-direction: row;
-}
-.fa-search.frild{
-      padding-right: 20px;
-}  */
-
-/* ---------header style area start---------- */
+ 
 .header-area{
       width: 100%;
       background-color: #ffffff;
@@ -130,10 +68,11 @@ ul li a{
 .Influencers{
        display: flex;
       justify-content: center;
-      align-items: center;  
+      align-items: center; 
+      
 }
 .Influencer-text{
-      width: 60%;
+      width: 80%;
 }
 .Influencer-img{
       width: 40%;
@@ -142,7 +81,6 @@ ul li a{
       font-size: 50px;
 }
 .text-area {
-      width: 200px;
       text-decoration: none;
       background-color: salmon;
       padding: 10px 40px;
@@ -168,6 +106,7 @@ ul li a{
       grid-template-columns: repeat(7, 1fr);
       flex-direction: column;
       
+      
 }
 
 /*---------- middle section area start-------------- */
@@ -176,6 +115,7 @@ ul li a{
       grid-template-columns: repeat(3, 1fr);
       flex-direction: column;
       margin-left: 20px;
+      gap: 20px;
       
 }
 
@@ -187,7 +127,13 @@ ul li a{
 .middle-about{
       border: 2px silid ghostwhite;
       margin-top: 30px;
-      box-shadow: 10px, 10px, 10px;
+      box-shadow: 2px 3px 10px 2px rgba(109, 106, 106, 0.637);
+      padding: 20px;
+      
+}
+.middle-img img{
+      width: 100%;
+
 }
 .middle-about span{
       font-size: 20px;
@@ -199,15 +145,23 @@ ul li a{
 .fa-star-half-alt.filde{
       color: #fb901e;
 }
-.text-more{
+
+.text-more {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: end;
+      text-align: right;
+      margin-right: 20px;
+        }
       
-}
+
 .text-more a{
       text-decoration: none;
+      font-weight: bold;
       color: #e44880;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      text-align: right;
 }
 /*---------- middle section area end-------------- */
 
@@ -215,18 +169,12 @@ ul li a{
 /* -------products--products-area--area------start-------- */
 
 .products-area{
-      /* display: flex;
-      justify-content: center;
-      align-items: center;  */
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       
 }
-/* .products-img{
-      width: 40%;
-}  */
+
 .products-text{
-      /* width: 60%; */
       margin-left: 20px;
 }
 
@@ -269,10 +217,52 @@ footer{
 /*-------- -----footer-area-start------------ */
 
 /*-------- media query---------- */
-@media only screen and(max-width:668) {
-      .Influencer-text{
-            background-color: gold;
+@media only screen and (max-width:768px){
+      .container{
+            width: 100%;
       }
+      .navigation{
+            display: none;
+
+      }
+      .Influencers{
+            flex-direction: column;
+            
+      }
+      .Influencer-text h1{
+            font-size: 24px;
+      }
+      .Influencer-img img{
+            
+            margin-top: 20px;
+      } 
+      .Influencer-img {
+            width: 80%;
+      }
+      .company-name {
       
+            grid-template-columns:  1fr;
+            justify-content: center !important;
+            justify-items: center;
+        }
+        .middle-info{
+            grid-template-columns: 1fr;
+        }
+        .middle-img {
+            text-align: center;
+        }
+        .middle-about {
+            text-align: center;
+        }
+        .products-area{
+            grid-template-columns: 1fr;
+        }
+        .products-img {
+            text-align: center;
+      }
+      .products-text {
+             text-align: center;
+             padding-right: 5px;
+        }
 }
 /*-------- media query---------- */
